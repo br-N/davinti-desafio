@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE "Contato" (
     "id" SERIAL NOT NULL,
-    "name" TEXT NOT NULL,
+    "nome" TEXT NOT NULL,
     "idade" INTEGER NOT NULL,
 
     CONSTRAINT "Contato_pkey" PRIMARY KEY ("id")
@@ -17,4 +17,4 @@ CREATE TABLE "Telefone" (
 );
 
 -- AddForeignKey
-ALTER TABLE "Telefone" ADD CONSTRAINT "Telefone_idContato_fkey" FOREIGN KEY ("idContato") REFERENCES "Contato"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "Telefone" ADD CONSTRAINT "Telefone_idContato_fkey" FOREIGN KEY ("idContato") REFERENCES "Contato"("id") ON DELETE CASCADE ON UPDATE CASCADE;
