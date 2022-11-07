@@ -1,0 +1,26 @@
+{
+  "name": "davinti-desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/br-N/davinti-desafio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/br-N/davinti-desafio/issues"
+  },
+  "homepage": "https://github.com/br-N/davinti-desafio#readme",
+  "dependencies": {
+    "@prisma/client": "^4.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "prisma": "^4.5.0"
+  }
+}
